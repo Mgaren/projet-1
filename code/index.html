@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author = "Aurélie Fauquet, Maxime Bouet, Leo Brossillion, Maxime Auneau">
+    <meta name="Description" content="Une histoire, un lieu, une visite !">
+    <meta name="keywords" content="Visite, Tours, Guide">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header" role="bander" class="main-header">
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="logo2.png" class="logo" alt="logo" width="150" height="100" ></a></li>
+                <li><a href="histoire.html" class="item">Histoire</a></li>
+                <li><a href="visites.html" class="item" >Visites</a></li>
+                <li><a href="activites.html" class="item">Activités</a></li>
+                <li><a href="adresse.html" class="item">Adresses</a></li>
+                <li><a href="contact.html" class="item">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="w3-content w3-section" style="max-width: 1500px;">
+        <div class="text">
+          <p>Notre vision de Tours vous accompagne dans vos choix, grâce aux astuces fournis sur ce site, la ville de Tours vous accueillera aussi bien pour le loisir, la culture et bien plus encore..</p></div>
+        <img class="mySlides w3-animate-left" src="tours.1582922.w740.jpg" style="width:100%">
+        <img class="mySlides w3-animate-right" src="tours.jpg" style="width:100%">
+        <img class="mySlides w3-animate-left" src="Quartier.jpg" style="width:100%">
+      </div>
+      
+      <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 9000);    
+      }
+      </script>
+    </div>
+    <div class="flex-container">
+        <div class="box">
+            <h3 class="textHistoire"> Histoire </h3>
+            <div class="Histoire">
+                <div class="front">
+                    <img src="histoire_tours.jpeg" width="300" height="300">
+                </div>
+                <div class="back">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime iure aspernatur error sunt facilis esse itaque, labore animi nulla architecto officiis, fugiat dignissimos voluptatem ad illo! Ut doloremque deleniti sit! </p>
+                    <p class="link"
+                    href="histoire.html"> Voir plus...
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <h3 class="textVisite"> Visite </h3>
+            <div class="Visite">
+                <div class="front">
+                    <img src="visite_tours.jpeg" width="300" height="300">
+                </div>
+                <div class="back">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum esse cumque eos doloremque numquam consectetur optio saepe accusantium ipsam quisquam impedit nostrum qui debitis ducimus, beatae, praesentium id, cupiditate atque. </p>
+                    <p class="link"
+                    href="visite.html"> Voir plus... 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <h3 class="textActivité"> Activité </h3>
+            <div class="Activité">
+                <div class="front">
+                    <img src="activité_tours.jpeg" width="300" height="300">
+                </div>
+                <div class="back">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, id, laborum ab ipsa consequuntur rerum est iure hic ex autem ducimus, quam voluptatibus impedit omnis doloribus possimus temporibus in sapiente. </p>
+                    <p class="link"
+                    href="activité.html"> Voir plus... 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <h3 class="textAdresses"> Adresses </h3>
+            <div class="Adresses">
+                <div class="front">
+                    <img src="adresse_tours.jpg" width="300" height="300">
+                </div>
+                <div class="back">
+                    <p> Nos Bonnes Adresses sur Tours : <br /> manger, boire, visiter et s'amuser <br /> entre amis et/ou en famille </p>
+                    <p class="link"
+                    href="adresse.html"> Voir plus... 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
