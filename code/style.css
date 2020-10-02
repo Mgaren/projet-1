@@ -1,3 +1,11 @@
+body {
+  padding-top: 0;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+  background-color: #CFD8DC;
+  text-decoration: none;
+}
+
 .topnav {
     background-color: #333;
     overflow: hidden;
@@ -6,16 +14,19 @@
 .topnav a {
     float: left;
     display: block;
-    color: peachpuff;
+    color: rgb(252, 235, 220);
     text-align: center;
-    padding: 10px 40px;
-    text-decoration: none;
-    font-size: 20px;
+    padding: 20px 5px;
+    font-size: 27px;
+    font-family: cursive;
+    margin-left: 60px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
-.topnav img{
+.logo {
     float: left; 
-    margin-right: 200px;
+    display: block;
   }
 
 .topnav .item:hover {
@@ -47,14 +58,6 @@
   }
 
 /*-------------------------Partie Max A-----------------------*/
-
-body {
-    padding-top: 0;
-    padding-bottom: 3rem;
-    color: #5a5a5a;
-    background-color: #CFD8DC;
-  }
-  
   
   .carousel-control-next-icon, .carousel-control-prev-icon {
     background-color: rgba(0, 0, 0, 0.3);
