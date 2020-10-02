@@ -7,18 +7,31 @@
     <meta name="Description" content="Une histoire, un lieu, une visite !">
     <meta name="keywords" content="Visite, Tours, Guide">
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">    <title>Vision Tours</title>
     <title>Document</title>
 </head>
 <body>
     <header id="header" role="bander" class="main-header">
-        <nav>
-            <ul>
-                <li><a href="index.html"><img src="../images/logo2.png" class="logo" alt="logo" width="150" height="100" ></a></li>
-                <li><a href="histoire.html" class="item">Histoire</a></li>
-                <li><a href="visites.html" class="item" >Visites</a></li>
-                <li><a href="activites.html" class="item">Activités</a></li>
-                <li><a href="adresse.html" class="item">Adresses</a></li>
-                <li><a href="contact.html" class="item">Contact</a></li>
-            </ul>
+        <nav class="topnav" id="myTopnav">
+          <a href="index.html"><img src="../images/logo2.png" class="logo" alt="logo" width="180" height="70" ></a>
+          <a href="histoire.html" class="item">Histoire</a>
+          <a href="visite.html"class="item">Visites</a>
+          <a href="activité.html"class="item">Activités</a>
+          <a href="adresse.html"class="item">Adresses</a>
+          <a href="contact.html"class="item">Contact</a>
+          <a href="javascript:void(0);" class="icon" onclick="myNavbar()">
+            <i class="fa fa-bars"></i>
+          </a>
         </nav>
-    </header>
+        <script>
+          function myNavbar() {
+            var x = document.getElementsById("myTopnav");
+            if (x.className === "topnav") {
+              x.classname += "responsive";
+            } else {
+              x.classname = "topnav";}
+          } 
+          </script>
+      </header>
