@@ -1,76 +1,134 @@
-*{
-    box-sizing: border-box;
-}
-html,body,ul{
-    padding:0;
-    margin:0;
-    background-color: rgba(165, 165, 163, 0.527);
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+.topnav {
     background-color: #333;
+    overflow: hidden;
   }
   
-  li img{
-    float: left; 
-    margin-right: 200px;
-    width:250px;
-    height: 94px;
-  }
-  
-  li .item {
+.topnav a {
     float: left;
     display: block;
-    color: white;
-    font-family: fantasy;
-    font-size: 20px;
-    padding: 30px 30px;
+    color: peachpuff;
+    text-align: center;
+    padding: 10px 40px;
     text-decoration: none;
+    font-size: 20px;
   }
 
-nav li .item:hover{
+.topnav img{
+    float: left; 
+    margin-right: 200px;
+  }
+
+.topnav .item:hover {
     background-color:rgb(0, 160, 222);
-    color:black;
-    
-}
+    color: black;
+  }
 
-#header {
-    padding-bottom: 3px;
-}
+.topnav .icon {
+    display: none;
+  } 
 
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
 
 /*-------------------------Partie Max A-----------------------*/
 
-
-
-.mySlides {
-    width: 1400px;
-    height: 720px;
-    background-color: rgba(0, 0, 0, 0.603);
-    z-index: 0;
-    filter: brightness(0.8);
-    display: none;
+body {
+    padding-top: 0;
+    padding-bottom: 3rem;
+    color: #5a5a5a;
+    background-color: #CFD8DC;
   }
   
-  .text {
+  
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: 100% 50%;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+  }
+  .carousel-control-next-icon {
+  background-position-x: 0.6em;
+  }
+  
+  .carousel-control-next-icon:hover, .carousel-control-prev-icon:hover {
+    background-color: #777;
+  }
+  
+  .carousel {
+    margin-bottom: 0rem;
+  }
+  
+  .carousel-caption {
+    z-index: 100;
+    bottom: 3rem;
+    
+  }
+  
+  .carousel-item {
+    height: 48rem;
+    background-color: #777;
+    z-index: -14;
+    align-items: center;
+  }
+  
+  .carousel-item > img {
     position: absolute;
-    background: rgba(0, 0, 0, 0.808);
-    z-index: 1;
-    color: whitesmoke;
-    margin-left: 1000px;
-    margin-right: 100px;
-    font-size: 20px;
-    right: 20px;
-    padding: 50px;
-    margin-top: 150px;
-    line-height: 30px;
+    min-width: 100%;
+    height: 48rem;
+    filter: brightness(0.5);
   }
   
-
+  .textC {
+    z-index: 1;
+    padding: 25px;
+    margin: 20rem;
+    margin-right: 20rem;
+    background-color: rgba(0, 0, 0, 0.671);
+  }
+  
+  
+  @media (min-width: 40em) {
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .textC {
+      padding: 10px;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  
+    #first  {
+      position: ;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
 
 /*--------------------------partie Max B------------------------------------*/
 
@@ -136,6 +194,10 @@ h3 {
 
 .textHistoire:hover, .textVisite:hover, .textActivité:hover, .textAdresses:hover {
     background-color: rgb(0, 160, 222);
+}
+
+@media all {
+
 }
 
 /*--------------------------partie Leo------------------------------------*/
