@@ -137,3 +137,40 @@ h3 {
 .textHistoire:hover, .textVisite:hover, .textActivité:hover, .textAdresses:hover {
     background-color: rgb(0, 160, 222);
 }
+
+/*--------------------------partie Leo------------------------------------*/
+.footer {
+    margin-left:30px ;
+    
+}
+.carte{
+    margin-left:1050px ;
+    margin-top: -300px;
+}
+.reseaux{
+    text-align: center;
+    
+}
+.reseaux1{
+    display:flex;
+    justify-content: center;
+}
+.contact{
+    text-align: center;
+}
+.copyright{
+    color:grey;
+    text-align: center;
+}
+
+.merci{
+    text-align: center;
+    margin-top: -180px;
+}
+#scrollUp
+{
+position: fixed;
+bottom : 15px;
+right: -20px;
+opacity: 0,7;
+}
