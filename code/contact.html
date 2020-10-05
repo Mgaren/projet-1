@@ -7,6 +7,7 @@
     <meta name="Description" content="Une histoire, un lieu, une visite !">
     <meta name="keywords" content="Visite, Tours, Guide">
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">    <title>Vision Tours</title>
@@ -35,3 +36,47 @@
           } 
           </script>
       </header>
+
+      <!--Design à faire-->
+      
+      <div class="boiteForm">
+        <h2>Contactez Nous</h2>
+        <div id="error">
+
+        </div>
+
+        <form action="#" method="GET" onsubmit="return validate();">
+
+          <div>
+          <label for="nom"></label>
+          <input type="text" id="nom" placeholder="Nom">
+          </div>
+          <div>
+          <label for="mail"></label>
+          <input type="email" id="mail" placeholder="E-mail">
+          </div>
+          <div>
+          <label for="tel"></label>
+          <input type="text" id="tel" placeholder="Telephone">
+          </div>
+          <div>
+          <input type="checkbox" id="infos1" value="Activités/Visites">
+          <label for="infos1">Activités/Visites</label>
+          
+          <input type="checkbox" id="infos2" value="Culture locale">
+          <label for="infos2">Culture locale</label>
+
+          <input type="checkbox" id="infos3" value="infos pratiques">
+          <label for="infos3">Infos Pratiques</label>
+          </div>
+
+          <div>
+          <label for="message"></label>
+          <textarea id="message" name="message" placeholder="Votre message.." style="height:200px"></textarea>
+          </div>
+          <input type="submit" value="Submit" name="button">
+        </form>
+      </div>
+
+
+</body>
