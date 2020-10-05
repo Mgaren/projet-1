@@ -142,8 +142,9 @@ body {
     justify-content: center;
     justify-content: space-between;
     justify-content: space-around;
-    background-color: #333;
+    background-color: rgb(218, 192, 192);
     padding-bottom: 100px;
+    padding-top: 50px;
 }
 
 .box {
@@ -154,7 +155,6 @@ body {
 }
 
 .Activité, .Adresses, .Histoire, .Visite {
-    position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -163,8 +163,53 @@ body {
     margin-top: -9px;
 }
 
-h3 {
-    text-align: center;
+.textVisite {
+  display: flex;
+  justify-content: center;
+  backface-visibility: hidden;
+  background-color: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-family: cursive;
+  color: rgb(252, 235, 220);
+  font-size: 50px;
+}
+.textHistoire {
+  display: flex;
+  justify-content: center;
+  backface-visibility: hidden;
+  background-color: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-family: cursive;
+  color: rgb(252, 235, 220);
+  font-size: 50px;
+}
+.textAdresses {
+  display: flex;
+  justify-content: center;
+  backface-visibility: hidden;
+  background-color: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-family: cursive;
+  color: rgb(252, 235, 220);
+  font-size: 50px;
+}
+.textActivité {
+  display: flex;
+  justify-content: center;
+  backface-visibility: hidden;
+  background-color: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-family: cursive;
+  color: rgb(252, 235, 220);
+  font-size: 50px;
 }
 
 .box:hover .Visite, .box:hover .Adresses, .box:hover .Histoire, .box:hover .Activité {
@@ -195,22 +240,19 @@ h3 {
     padding-left: 150px;
 }
 
-.textHistoire:hover, .textVisite:hover, .textActivité:hover, .textAdresses:hover {
-    background-color: rgb(0, 160, 222);
-}
-
 
 /*--------------------------partie Leo------------------------------------*/
 .footer {
-    margin-left:30px ;
-    
+    margin-left:30px;
+    background-color: #333;
 }
 .carte{
-    margin-left:1050px ;
+    margin-left:1050px;
     margin-top: -300px;
 }
 .reseaux{
     text-align: center;
+    color: white;
     
 }
 .reseaux1{
@@ -219,15 +261,17 @@ h3 {
 }
 .contact{
     text-align: center;
+    color: white;
 }
 .copyright{
-    color:grey;
+    color: white;
     text-align: center;
 }
 
 .merci{
     text-align: center;
     margin-top: -180px;
+    color: rgb(0, 160, 222);
 }
 #scrollUp
 {
