@@ -48,6 +48,8 @@ body {
         height:50px;
         float: right;
         z-index: 500;
+        margin-right: 30px;
+        margin-top: 15px;
     }
     
     .menu{
