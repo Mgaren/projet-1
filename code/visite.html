@@ -13,25 +13,22 @@
     <title>Document</title>
 </head>
 <body>
-    <header id="header" role="bander" class="main-header">
-      <a href="index.html"><img src="../images/logo2.png" class="logo" alt="logo" width="200" height="81" ></a>
-        <nav class="topnav" id="myTopnav">
-          <a href="histoire.html" class="item">Histoire</a>
-          <a href="visite.html"class="item">Visites</a>
-          <a href="activité.html"class="item">Activités</a>
-          <a href="adresse.html"class="item">Adresses</a>
-          <a href="contact.html"class="item">Contact</a>
-          <a href="javascript:void(0);" class="icon" onclick="myNavbar()">
-            <i class="fa fa-bars"></i>
-          </a>
-        </nav>
-        <script>
-          function myNavbar() {
-            var x = document.getElementsById("myTopnav");
-            if (x.className === "topnav") {
-              x.classname += "responsive";
-            } else {
-              x.classname = "topnav";}
-          } 
-          </script>
+  <header id="header" class="header">
+    <a href="index.html"><img src="../images/logo2.png" class="logo" alt="logo" width="200" height="81" ></a>
+    <a href="icon.svg" class="icon" id="icon"><i img src="icon.svg" width="70"></i>
+    </a>
+    <nav class="menu">
+        <a href="histoire.html" class="item">Histoire</a>
+        <a href="visite.html"class="item">Visites</a>
+        <a href="activité.html"class="item">Activités</a>
+        <a href="adresse.html"class="item">Adresses</a>
+        <a href="contact.html"class="item">Contact</a>
+    </nav>
+      <script>
+         (function($){
+          $('#icon').click(function(e){
+              e.preventDefault();
+              $('body').toggleClass('with-sidebar');
+          })
+        })(jQuery);</script>
       </header>
