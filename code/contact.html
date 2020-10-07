@@ -14,7 +14,6 @@
     <title>Vision Tours</title>
 </head>
 <body>
-  <div class="bg-c">
     <header id="header" class="header">
       <a href="index.html"><img src="../images/logo2.png" class="logo" alt="logo" width="200" height="81" ></a>
       <a href="../images/icon.png" class="icon" id="icon"><img src="../images/icon.png" width="50"></img>
@@ -34,39 +33,40 @@
             })
           })(jQuery);</script>
       </header>
+      <div class="bg-c">
         <div class="boiteForm">
-          <h2 id="contact">Contactez Nous</h2>
-          <div id="error">
-
-          </div>
+          <h2 id="contact">Contactez-nous</h2>
 
           <form action="#" method="GET" onsubmit="return validate();">
 
             <div class="input">
-            <label for="nom"></label>
+            <label for="nom">Votre Nom :</label>
+            <div id="error"></div>
             <input type="text" id="nom" placeholder="Nom">
             </div>
             <div class="input">
-            <label for="mail"></label>
+            <label for="mail">Votre mail :</label>
+            <div id="error1"></div>
             <input type="email" id="mail" placeholder="E-mail">
             </div>
             <div class="input">
-            <label for="tel"></label>
-            <input type="phone" id="tel" placeholder="Telephone">
+            <label for="tel">Votre numéro :</label>
+            <input type="phone" id="tel" placeholder="Téléphone">
             </div>
             <div class="checkbox">
             <input type="checkbox" id="infos1" value="Activités/Visites">
-            <label for="infos1"><h4>Activités/Visites</h4></label>
+            <label for="infos1"><h5>Activités/Visites</h5></label>
           
             <input type="checkbox" id="infos2" value="Culture locale">
-            <label for="infos2"><h4>Culture locale</h4></label>
+            <label for="infos2"><h5>Culture locale</h5></label>
 
             <input type="checkbox" id="infos3" value="infos pratiques">
-            <label for="infos3"><h4>Infos pratiques</h4></label>
+            <label for="infos3"><h5>Infos pratiques</h5></label>
             </div>
 
             <div class="input">
-            <label for="message"></label>
+            <label for="message">Votre message :</label>
+            <div id="error2"></div>
             <textarea id="message" name="message" placeholder="Votre message.." style="height:200px"></textarea>
             </div>
             <div class="button">
@@ -74,6 +74,5 @@
             </div>
           </form>
         </div>
-  </div>
-
+      </div>
 </body>

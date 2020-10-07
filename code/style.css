@@ -1,7 +1,6 @@
 body {
   padding-top: 0;
   padding-bottom: 3rem;
-  color: #5a5a5a;
   background-color: #CFD8DC;
   text-decoration: none;
 }
@@ -15,11 +14,10 @@ body {
 .menu a {
     float: left;
     display: block;
-    color: rgb(252, 235, 220);
+    color: white;
     text-align: center;
     padding: 20px 20px;
     font-size: 27px;
-    font-family: cursive;
     margin-left: 50px;
     padding-left: 50px;
     padding-right: 50px;
@@ -32,7 +30,7 @@ body {
 
 .menu .item:hover {
     background-color:rgb(0, 160, 222);
-    color: black;
+    color: white;
     text-decoration: none;
   }
 
@@ -158,17 +156,24 @@ body {
 
 /*--------------------------partie Max B------------------------------------*/
 
+.flextext {
+  background-color: rgb(68, 100, 131);    
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
 
+.titreflex {
+  padding-bottom: 100px;
+  text-align: center;
+}
 
 .flex-container {
     display: flex;
     justify-content: center;
     justify-content: space-between;
     justify-content: space-around;
-    background-color: rgb(218, 192, 192);
-    padding-bottom: 100px;
-    padding-top: 50px;
 }
+
 
 .box {
     background-color: transparent;
@@ -194,8 +199,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  font-family: cursive;
-  color: rgb(252, 235, 220);
+  color: white;
   font-size: 50px;
 }
 .textHistoire {
@@ -206,8 +210,8 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  font-family: cursive;
-  color: rgb(252, 235, 220);
+
+  color: white;
   font-size: 50px;
 }
 .textAdresses {
@@ -218,8 +222,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  font-family: cursive;
-  color: rgb(252, 235, 220);
+  color: white;
   font-size: 50px;
 }
 .textActivité {
@@ -230,8 +233,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  font-family: cursive;
-  color: rgb(252, 235, 220);
+  color: white;
   font-size: 50px;
 }
 
@@ -331,28 +333,29 @@ opacity: 0,7;
 /* ----------------------------------------------------CONTACT------------------------------------------------*/
 
 .bg-c {
-  background-image: url(../images/ToursC.jpg);
+  background-image: url(../images/toursC1.png);
   background-size: cover;
+  padding: 1px 1px 40px 1px;
+  margin-bottom: -50px;
 }
 
 .boiteForm {
-text-align: center;
+
 background-color: rgba(51, 51, 51, 0.897);
-margin-left: 350px; margin-right: 350px;
-padding: 5px 0 20px 0;
-margin-top: 80px;
-margin-bottom: -60px;
+margin-left: 400px; margin-right: 400px;
+padding: 5px 50px 20px 50px;
+margin-top: 50px;
 border-radius: 10px;
-color: rgb(255, 217, 184);
+color: white;
 }
 
 #contact {
   margin: 2rem;
-  font-family: cursive,sans-serif;
   font-size: 45px;
   border-bottom: 2px solid rgb(255, 255, 255);
   padding: 10px;
-  margin-left: 150px; margin-right: 150px;
+  margin-left: 120px; margin-right: 120px;
+  text-align: center;
 }
 
 .input {
@@ -364,20 +367,25 @@ color: rgb(255, 217, 184);
 }
 
 input[type=text], input[type=email], input[type=phone], textarea {
-  width: 40%;
-  padding: 15px;
-  border-bottom: 1px solid #ccc;
-  border-right: none; border-top: none; border-left: none;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; 
+  border-right: none ; border-top: none; border-left: none;
   resize: vertical;
   background-color: rgba(78, 78, 78, 0.705);
   color: white;
+  vertical-align: top;
+}
+
+label {
+  font-size: 20px;
+  margin-top: 30px;
 }
 
 input[type=checkbox]{
-  margin-left: 30px;
+  margin-left: 20px;
   vertical-align: -3px;
 }
 
@@ -394,7 +402,7 @@ input[type=checkbox]{
 
 input[type=submit] {
   border-radius: 10px;
-  color: rgb(255, 217, 184);
+  color: white;
   border: none;
   box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
   font-size: 20px;
@@ -429,6 +437,27 @@ input[type=submit] {
 
 #error {
   font-size: 20px;
-  background-color: rgb(185, 40, 40);
+  background-color: rgb(201, 0, 0);
+  transition: 0.5s ease;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+#error1 {
+  font-size: 20px;
+  background-color: rgb(201, 0, 0);
+  transition: 0.5s ease;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+#error2 {
+  font-size: 20px;
+  background-color: rgb(201, 0, 0);
   transition: 2s ease;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 3px;
 }
