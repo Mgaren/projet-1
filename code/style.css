@@ -12,21 +12,20 @@ body {
   }
 
 .menu a {
-    float: left;
-    display: block;
     color: white;
-    text-align: center;
-    padding: 20px 20px;
     font-size: 27px;
-    margin-left: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 1.35rem;
+    float: left;
+    display: flex;
+    margin-left: 6vw;
+
   }
 
-.logo {
-    float: left; 
+  .logo {
+    float: left;
     display: block;
   }
+
 
 .menu .item:hover {
     background-color:rgb(0, 160, 222);
@@ -41,9 +40,6 @@ body {
   @media screen and (max-width:760px){
     .header .icon{
         display:block;
-        position: relative;
-        width:50px;
-        height:50px;
         float: right;
         z-index: 500;
         margin-right: 30px;
@@ -51,30 +47,20 @@ body {
     }
     
     .menu{
-      z-index: 500;
-        position: absolute;
-        width:250px;
-        right:0;
-        top:80px;
-
-        transform: translateX(+250px);
-        transition-duration: 0.3s;
+      display: none;
     }
     .menu a{
       z-index: 500;
         display: block;
-        height:70px;
-        width:200px;
+        width:100%;
         text-align: center;
         line-height: 40px;
         background-color: rgb(78, 78, 78);
         border-bottom:1px solid darkgray;
+        padding: 1rem;
+        margin-left: 0;
     }
 }
-
-.with-sidebar .menu{
-        transform: translateX(0);
-    }
 
 
 
@@ -164,7 +150,6 @@ body {
 
 .titreflex {
   margin-bottom: 100px;
-  margin-left: 20rem; margin-right: 20rem;
   text-align: center;
   color: white;
   border-bottom: solid 2px white;
