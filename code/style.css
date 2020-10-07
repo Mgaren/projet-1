@@ -289,35 +289,64 @@ body {
 
 /*--------------------------partie Leo------------------------------------*/
 .footer {
-    margin-left:30px;
-    background-color: #333;
+  background-color: #333;
+  width: 100%;
+  padding-top: 20px;
+  margin-bottom: -100px;
+}
+
+.text-footer {
+border-bottom: solid 2px white;
+text-align: center;
+margin-bottom: 4rem;
+margin-right: 10rem; margin-left: 10rem;
+}
+
+.liens-utiles{
+margin-left: 25px;
+color: white;
 }
 .carte{
-    margin-left:1050px;
-    margin-top: -300px;
+  display: flex;
+  justify-content: end;
+  margin-right: 10px;
+  margin-top: -250px;
 }
+
+.items-footer {
+text-decoration: none;
+color: white;
+}
+
+.items-footer:hover {
+color: white;
+text-decoration: none;
+}
+
 .reseaux{
-    text-align: center;
-    color: white;
-    
+  text-align: center;
+  color: white;
+  
 }
 .reseaux1{
-    display:flex;
-    justify-content: center;
+  display:flex;
+  justify-content: center;
+  text-align: center;
 }
 .contact{
-    text-align: center;
-    color: white;
+  text-align: center;
+  color: white;
 }
 .copyright{
-    color: white;
-    text-align: center;
+  color: grey;
+  text-align: center;
+  
 }
 
 .merci{
-    text-align: center;
-    margin-top: -180px;
-    color: rgb(0, 160, 222);
+  text-align: center;
+  margin-top: -280px;
+  color: rgb(0, 160, 222);
 }
 #scrollUp
 {
@@ -325,6 +354,7 @@ position: fixed;
 bottom : 15px;
 right: -20px;
 opacity: 0,7;
+
 }
 
 
