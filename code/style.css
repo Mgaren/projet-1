@@ -332,7 +332,12 @@ body {
 border-bottom: solid 2px white;
 text-align: center;
 margin-bottom: 4rem;
-margin-right: 10rem; margin-left: 10rem;
+margin-right: 10rem; 
+margin-left: 10rem;
+}
+
+.menu-footer{
+  visibility: hidden;
 }
 
 .liens-utiles{
@@ -344,6 +349,9 @@ color: white;
   justify-content: end;
   margin-right: 10px;
   margin-top: -250px;
+  
+  
+  
 }
 
 .items-footer {
@@ -388,6 +396,31 @@ bottom : 15px;
 right: -20px;
 opacity: 0,7;
 
+}
+@media (max-width: 40em) {
+ .carte{
+   visibility: hidden;
+ }
+ .liens-utiles{
+   text-align: center;
+   visibility: hidden;
+ }
+.menu-footer{
+  visibility: visible;
+}
+}
+@media (max-width: 62em) {
+  .carte{
+   visibility: hidden;
+  }
+  .liens-utiles{
+    text-align: center;
+    visibility: hidden;
+
+  }
+  .menu-footer{
+    visibility: visible;
+  }
 }
 
 
