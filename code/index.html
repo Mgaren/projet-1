@@ -13,6 +13,7 @@
     <title>Document</title>
 </head>
 <body>
+<<<<<<< HEAD
   <header id="header" class="header">
     <a href="index.html"><img src="../images/logo2.png" class="logo" alt="logo" width="200" height="81" ></a>
     <a href="javascript:void(0);" class="icon" id="icon" onclick="topMenu()"><img id="button-menu" src="../images/icon.png" width="50"></img>
@@ -38,6 +39,27 @@ function topMenu() {
 
 
       </script>
+=======
+    <header id="header" class="header">
+      <a href="index.html"><img src="../images/logo2.png" class="logo" alt="logo" width="200" height="81" ></a>
+      <a href="icon.svg" class="icon" id="icon"><i img src="icon.svg" width="70"></i>
+      </a>
+      <nav class="menu">
+          <a href="histoire.html" class="item">Histoire</a>
+          <a href="visite.html"class="item">Visites</a>
+          <a href="activité.html"class="item">Activités</a>
+          <a href="adresse.html"class="item">Adresses</a>
+          <a href="contact.html"class="item">Contact</a>
+      </nav>
+        <script>
+           (function($){
+            $('#icon').click(function(e){
+                e.preventDefault();
+                $('body').toggleClass('with-sidebar');
+            })
+          })(jQuery);
+        </script>
+>>>>>>> 05beffc81454a0bda019140ba63e790fe8d7b222
       </header>
       <div id="myCarousel" class="carousel slide carousel-slide" data-ride="carousel" data-interval= "100000">
         <ol class="carousel-indicators">
