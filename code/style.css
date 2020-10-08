@@ -329,22 +329,28 @@ body {
 .footer {
   background-color: #333;
   width: 100%;
-  padding-top: 20px;
+  padding-top: 1rem;
   margin-bottom: -100px;
+  
 }
 
 .text-footer {
-border-bottom: solid 2px white;
+border-bottom: solid 3px white;
 text-align: center;
 margin-bottom: 4rem;
 margin-right: 10rem; 
 margin-left: 10rem;
+text-decoration-style: none;
 }
 
 .menu-footer{
   visibility: hidden;
-}
+  margin-top: 2rem;
+  padding-bottom:2.5rem;
+  border-bottom: solid 1px white;
+  }
 
+ 
 .liens-utiles{
 margin-left: 25px;
 color: white;
@@ -354,9 +360,6 @@ color: white;
   justify-content: end;
   margin-right: 10px;
   margin-top: -250px;
-  
-  
-  
 }
 
 .items-footer {
@@ -407,24 +410,35 @@ opacity: 0,7;
    visibility: hidden;
  }
  .liens-utiles{
-   text-align: center;
+   
    visibility: hidden;
  }
 .menu-footer{
   visibility: visible;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
+  
 }
 }
+
 @media (max-width: 62em) {
   .carte{
    visibility: hidden;
   }
   .liens-utiles{
-    text-align: center;
+    
     visibility: hidden;
-
   }
   .menu-footer{
     visibility: visible;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
