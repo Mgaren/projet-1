@@ -398,26 +398,28 @@ opacity: 0,7;
 .bg-c {
   background-image: url(../images/toursC1.png);
   background-size: cover;
-  padding: 1px 1px 40px 1px;
+  padding: 1px 1px 200px 1px;
   margin-bottom: -50px;
 }
 
 .boiteForm {
 
 background-color: rgba(51, 51, 51, 0.897);
-margin-left: 400px; margin-right: 400px;
+width: 50%;
+margin-left: auto;
+margin-right: auto;
 padding: 5px 50px 20px 50px;
-margin-top: 50px;
+margin-top: 150px;
 border-radius: 10px;
 color: white;
 }
 
 #contact {
-  margin: 2rem;
-  font-size: 45px;
+  margin: 2vh;
+  font-size: 3vw;
   border-bottom: 2px solid rgb(255, 255, 255);
   padding: 10px;
-  margin-left: 120px; margin-right: 120px;
+  margin-left: 3vh; margin-right: 3vh;
   text-align: center;
 }
 
@@ -454,7 +456,10 @@ input[type=checkbox]{
 
 #infos1, #infos2, #infos3 {
   height: 20px;
-  width: 20px;
+}
+
+.infos {
+  font-size: 22px;
 }
 
 .button {
@@ -524,3 +529,57 @@ input[type=submit] {
   text-align: center;
   border-radius: 3px;
 }
+
+@media (max-width: 40em) {
+
+    .bg-c{
+      width: 100%;
+    }
+    .boiteForm {
+      width: 100%;
+      
+    }
+
+    label {
+      font-size: 2vh;
+    }
+
+    .infos {
+      font-size: 2.4vh;
+    }
+
+    #contact {
+      font-size: 3.5vh;
+    }
+
+    .button {
+      margin-left: 3rem;
+    }
+  }
+
+@media (max-width: 62em) {
+  .bg-c{
+    width: 100%;
+  }
+  .boiteForm {
+    width: 100%;
+    
+  }
+
+  label {
+    font-size: 2.5vh;
+  }
+
+  #contact {
+    font-size: 3.5vh;
+  }
+
+  .button {
+    margin-left: 3rem;
+  }
+
+  .infos {
+    font-size: 2.2vh;
+  }
+}
+

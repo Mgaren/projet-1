@@ -24,8 +24,8 @@ function validate(){
       errorA.innerHTML = text;
       return false
     }
-    if (message.length < 50) {
-      text = "S'il vous plaît inscrivez plus que 50 caractères pour le message"; // message à changer
+    if (message.length < 20 ) {
+      text = "Le message doit contenir minimum 20 caractères"; // message à changer
       errorB.style.padding = "2px";
       errorB.innerHTML = text;
       return false;
