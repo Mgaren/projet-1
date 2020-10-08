@@ -341,6 +341,10 @@ margin-right: 10rem;
 margin-left: 10rem;
 }
 
+.menu-footer{
+  visibility: hidden;
+}
+
 .liens-utiles{
 margin-left: 25px;
 color: white;
@@ -350,6 +354,8 @@ color: white;
   justify-content: end;
   margin-right: 10px;
   margin-top: -250px;
+  
+  
   
 }
 
@@ -396,8 +402,31 @@ right: -20px;
 opacity: 0,7;
 
 }
+@media (max-width: 40em) {
+ .carte{
+   visibility: hidden;
+ }
+ .liens-utiles{
+   text-align: center;
+   visibility: hidden;
+ }
+.menu-footer{
+  visibility: visible;
+}
+}
+@media (max-width: 62em) {
+  .carte{
+   visibility: hidden;
+  }
+  .liens-utiles{
+    text-align: center;
+    visibility: hidden;
 
-
+  }
+  .menu-footer{
+    visibility: visible;
+  }
+}
 
 
 /* ----------------------------------------------------CONTACT------------------------------------------------*/
