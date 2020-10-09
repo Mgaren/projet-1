@@ -355,22 +355,28 @@ body {
 .footer {
   background-color: #333;
   width: 100%;
-  padding-top: 20px;
+  padding-top: 1rem;
   margin-bottom: -100px;
+  
 }
 
 .text-footer {
-border-bottom: solid 2px white;
+border-bottom: solid 3px white;
 text-align: center;
 margin-bottom: 4rem;
 margin-right: 10rem; 
 margin-left: 10rem;
+text-decoration-style: none;
 }
 
 .menu-footer{
   visibility: hidden;
-}
+  margin-top: 2rem;
+  padding-bottom:2.5rem;
+  border-bottom: solid 1px white;
+  }
 
+ 
 .liens-utiles{
 margin-left: 25px;
 color: white;
@@ -380,9 +386,6 @@ color: white;
   justify-content: end;
   margin-right: 10px;
   margin-top: -250px;
-  
-  
-  
 }
 
 .items-footer {
@@ -390,9 +393,11 @@ text-decoration: none;
 color: white;
 }
 
+
 .items-footer:hover {
 color: white;
 text-decoration: none;
+color: rgb(0, 160, 222);
 }
 
 .reseaux{
@@ -404,7 +409,9 @@ text-decoration: none;
   display:flex;
   justify-content: center;
   text-align: center;
+  
 }
+
 .contact{
   text-align: center;
   color: white;
@@ -417,7 +424,7 @@ text-decoration: none;
 
 .merci{
   text-align: center;
-  margin-top: -280px;
+  margin-top: -25rem;
   color: rgb(0, 160, 222);
 }
 #scrollUp
@@ -428,29 +435,42 @@ right: -20px;
 opacity: 0,7;
 
 }
+
+
 @media (max-width: 40em) {
  .carte{
    visibility: hidden;
  }
  .liens-utiles{
-   text-align: center;
+   
    visibility: hidden;
  }
 .menu-footer{
   visibility: visible;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
+  
 }
 }
+
 @media (max-width: 62em) {
   .carte{
    visibility: hidden;
   }
   .liens-utiles{
-    text-align: center;
+    
     visibility: hidden;
-
   }
   .menu-footer{
     visibility: visible;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
