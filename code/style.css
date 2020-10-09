@@ -367,9 +367,11 @@ text-decoration: none;
 color: white;
 }
 
+
 .items-footer:hover {
 color: white;
 text-decoration: none;
+color: rgb(0, 160, 222);
 }
 
 .reseaux{
@@ -381,7 +383,9 @@ text-decoration: none;
   display:flex;
   justify-content: center;
   text-align: center;
+  
 }
+
 .contact{
   text-align: center;
   color: white;
@@ -405,6 +409,8 @@ right: -20px;
 opacity: 0,7;
 
 }
+
+
 @media (max-width: 40em) {
  .carte{
    visibility: hidden;
