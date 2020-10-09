@@ -6,7 +6,7 @@
     <meta author = "Aurélie Fauquet, Maxime Bouet, Leo Brossillion, Maxime Auneau">
     <meta name="Description" content="Une histoire, un lieu, une visite !">
     <meta name="keywords" content="Visite, Tours, Guide">
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="adresse.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">    <title>Vision Tours</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -24,12 +24,84 @@
         <a href="adresse.html"class="item">Adresses</a>
         <a href="contact.html"class="item">Contact</a>
     </nav>
-      <script>
-         (function($){
-          $('#icon').click(function(e){
-              e.preventDefault();
-              $('body').toggleClass('with-sidebar');
-          })
-        })(jQuery);
-      </script>
-      </header>
+    <script>
+        (function($){
+        $('#icon').click(function(e){
+            e.preventDefault();
+            $('body').toggleClass('with-sidebar');
+        })
+      })(jQuery);
+    </script>
+  </header>
+
+  <div id="tableau">
+    <div class="back"><img src="../images/burgeradresse.jpg" width="100%"></div>
+    <h2 class="textTitre"> Les cultures gastronomique </h2>
+      <table class="tableau">
+        <thead class="Restaurants">
+          <tr>
+            <h3 class="textTitre1"> Les Restaurants : </h3>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="noms1"> L'Escapade </td>
+            <td class="images1"><img src="../images/escapade.jpg" width="200" height="200"></td>
+            <td class="description1"> Lieux très charmant et acceuillant! Restaurant gastronomique qui a obtenu le titre de maître restaurateur en 2014. </td>
+            <td class="adresse1"> 88 Rue Colbert 
+                                  37000 Tours <br>
+                                  tel : 02 47 05 24 81 </td>
+          </tr>
+          <tr>
+            <td class="noms1"> L'Embellie </td>
+            <td class="images1"><img src="../images/embellie.jpg" width="200" height="200"></td>
+            <td class="description1"> C’est au cœur de Tours, à deux pas de la place Plumereau, dans un cadre discret et élégant! Vous êtes ici au cœur d’un établissement où les pierres anciennes et les poutres dévoilées vous murmurent l’histoire de la vieille ville, sur un air de jazz. </td>
+            <td class="adresse1"> 10 rue de la grosse Tour
+                                  37000 Tours <br>
+                                  tel : 09 54 61 64 43 </td>
+          </tr>
+          <tr>
+            <td class="noms1"> Le Café Marcel </td>
+            <td class="images1"><img src="../images/le-cafe-marcel.jpg" width="200" height="200"></td>
+            <td class="description1"> Très bon accueil, des plats copieux et délicieux! Service et cadre au top. Restaurant,Bar convivial et chaleureux dans la galerie commerciale de l’heure tranquille : burgers, cocktails, brunch, bar à vins, salades, goûter, cafés créations. </td>
+            <td class="adresse1"> 4 Place Plumereau
+                                  37000 Tours <br>
+                                  tel : 02 47 22 07 98 </td>
+          </tr>
+          <tr>
+            <td class="noms1"> Le Saint Honoré </td>
+            <td class="images1"><img src="../images/le-saint-honore.jpg" width="200" height="200"></td>
+            <td class="description1"> L’accueil est chaleureux, la carte est agréable! Fraicheur des produits du terroir et régionale. A découvrir rapidement! </td>
+            <td class="adresse1"> 7 Place des Petites Boucheries
+                                  37000 Tours <br>
+                                  tel : 02 47 61 93 82 </td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="tableau">
+        <thead class="Bars">
+          <tr>
+            <h3 class="textTitre2"> Les Bars : </h3>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="noms2"> La Reserve </td>
+            <td class="images2"><img src="../images/Bars1.jpg" width="200" height="200"></td>
+            <td class="description2"> L'endroit est très sympa, les produits sont de qualités! Des planchettes variées pour une dégustation de nos produits locaux! </td>
+            <td class="adresse2"> 84 rue Colbert
+                                  37000 Tours <br>
+                                  tel : 09 84 45 93 09 </td>
+          </tr>
+          <tr>
+            <td class="noms2"> The Pale </td>
+            <td class="images2"><img src="../images/bars2.jpg" width="200" height="200"></td>
+            <td class="description2"> Un petit coin d’Irlande au cœur de la Touraine dans un parfait esprit de convivialité! Pour les amateurs de sport, c'est un lieux de retransmision sportive! </td>
+            <td class="adresse2"> 18 Place Foire le Roi
+                                  37000 Tours <br>
+                                  tel : 02 47 64 80 56 </td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+</body>
