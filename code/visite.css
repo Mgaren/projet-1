@@ -106,9 +106,10 @@ body {
   .title-ciel{
     background: url(../images/tours_vue_du_ciel.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     font-size: 10vh;
-    padding: 20vw;
+    padding: 10vw;
     text-align: center;
     width: 100%;
   }
@@ -149,7 +150,7 @@ body {
   }
 
 
-  @media (min-width: 40em) {
+  @media (max-width: 40em) {
       .visite-img{
           text-align:center;
 
@@ -157,11 +158,13 @@ body {
       }
 
       #title-inside {
-        padding: 20px;
+        padding: 1vw;
       }
 
       .title-ciel{
-
+        padding: 10vw;
+        background-size: cover;
+        width: 100%;
       }
       
   }
