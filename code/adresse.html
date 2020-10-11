@@ -6,7 +6,7 @@
     <meta author = "Aurélie Fauquet, Maxime Bouet, Leo Brossillion, Maxime Auneau">
     <meta name="Description" content="Une histoire, un lieu, une visite !">
     <meta name="keywords" content="Visite, Tours, Guide">
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="adresse.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">    <title>Vision Tours</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -14,10 +14,15 @@
 </head>
 <body>
   <header id="header" class="header">
-    <a href="index.html"><img src="../images/logo2.png" class="logo" alt="logo" width="200" height="81" ></a>
-    <a href="../images/icon.png" class="icon" id="icon"><img src="../images/icon.png" width="50"></img>
+    <a href="index.html"><img src="../images/logo2.png" class="logo" alt="logo" width="100" height="81" ></a>
+    <a href="javascript:void(0);" class="icon" id="icon" onclick="topMenu()">
+      <div class="container" id="button-menu" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div> 
     </a>
-    <nav class="menu">
+    <nav class="menu" id="menu">
         <a href="histoire.html" class="item">Histoire</a>
         <a href="visite.html"class="item">Visites</a>
         <a href="activité.html"class="item">Activités</a>
@@ -25,11 +30,176 @@
         <a href="contact.html"class="item">Contact</a>
     </nav>
       <script>
-         (function($){
-          $('#icon').click(function(e){
-              e.preventDefault();
-              $('body').toggleClass('with-sidebar');
-          })
-        })(jQuery);
+
+
+function topMenu() {
+  var x = document.getElementById("menu");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+/* Open */
+function openNav() {
+  document.getElementById("menu").style.height = "100%";
+}
+
+/* Close */
+function closeNav() {
+  document.getElementById("menu").style.height = "0%";
+} 
+
+function myFunction(x) {
+  x.classList.toggle("change");
+} 
+
+
       </script>
       </header>
+
+      <div id="tableau">
+        <div class="back"><img src="../images/burgeradresse.jpg" width="100%"></div>
+        <h2 class="textTitre"> Les cultures gastronomique </h2>
+          <table class="tableau">
+            <thead class="Restaurants">
+              <tr>
+                <h3 class="textTitre1"> Les Restaurants : </h3>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="noms1"> L'Escapade </td>
+                <td class="images1"><img src="../images/escapade.jpg" width="200" height="200"></td>
+                <td class="description1"> Lieux très charmant et acceuillant! Restaurant gastronomique qui a obtenu le titre de maître restaurateur en 2014. </td>
+                <td class="adresse1"> 88 Rue Colbert 
+                                      37000 Tours <br>
+                                      tel : 02 47 05 24 81 </td>
+              </tr>
+              <tr>
+                <td class="noms1"> L'Embellie </td>
+                <td class="images1"><img src="../images/embellie.jpg" width="200" height="200"></td>
+                <td class="description1"> C’est au cœur de Tours, à deux pas de la place Plumereau, dans un cadre discret et élégant! Vous êtes ici au cœur d’un établissement où les pierres anciennes et les poutres dévoilées vous murmurent l’histoire de la vieille ville, sur un air de jazz. </td>
+                <td class="adresse1"> 10 rue de la grosse Tour
+                                      37000 Tours <br>
+                                      tel : 09 54 61 64 43 </td>
+              </tr>
+              <tr>
+                <td class="noms1"> Le Café Marcel </td>
+                <td class="images1"><img src="../images/le-cafe-marcel.jpg" width="200" height="200"></td>
+                <td class="description1"> Très bon accueil, des plats copieux et délicieux! Service et cadre au top. Restaurant,Bar convivial et chaleureux dans la galerie commerciale de l’heure tranquille : burgers, cocktails, brunch, bar à vins, salades, goûter, cafés créations. </td>
+                <td class="adresse1"> 4 Place Plumereau
+                                      37000 Tours <br>
+                                      tel : 02 47 22 07 98 </td>
+              </tr>
+              <tr>
+                <td class="noms1"> Le Saint Honoré </td>
+                <td class="images1"><img src="../images/le-saint-honore.jpg" width="200" height="200"></td>
+                <td class="description1"> L’accueil est chaleureux, la carte est agréable! Fraicheur des produits du terroir et régionale. A découvrir rapidement! </td>
+                <td class="adresse1"> 7 Place des Petites Boucheries
+                                      37000 Tours <br>
+                                      tel : 02 47 61 93 82 </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="tableau">
+            <thead class="Bars">
+              <tr>
+                <h3 class="textTitre2"> Les Bars : </h3>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="noms2"> La Reserve </td>
+                <td class="images2"><img src="../images/Bars1.jpg" width="200" height="200"></td>
+                <td class="description2"> L'endroit est très sympa, les produits sont de qualités! Des planchettes variées pour une dégustation de nos produits locaux! </td>
+                <td class="adresse2"> 84 rue Colbert
+                                      37000 Tours <br>
+                                      tel : 09 84 45 93 09 </td>
+              </tr>
+              <tr>
+                <td class="noms2"> The Pale </td>
+                <td class="images2"><img src="../images/bars2.jpg" width="200" height="200"></td>
+                <td class="description2"> Un petit coin d’Irlande au cœur de la Touraine dans un parfait esprit de convivialité! Pour les amateurs de sport, c'est un lieux de retransmision sportive! </td>
+                <td class="adresse2"> 18 Place Foire le Roi
+                                      37000 Tours <br>
+                                      tel : 02 47 64 80 56 </td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+
+      <footer>
+        <div class="footer">
+          <nav class="menu-footer">
+            <a href="histoire.html" class="items-footer">Histoire</a>
+            <a href="visite.html"class="items-footer">Visites</a>
+            <a href="activité.html"class="items-footer">Activités</a>
+            <a href="adresse.html"class="items-footer">Adresses</a>
+            <a href="contact.html"class="items-footer">Contact</a>
+        </nav>
+    
+          <div class="liens-utiles">
+            <div class="text-footer"><h2>Les liens utiles:</h2></div> <br>
+            <a  href="histoire.html" class="items-footer"><h5>En savoir plus sur notre ville</h5></a> <br> 
+            <a  href="visites.html" class="items-footer"><h5>Les visites à faire à Tours</h5></a> <br>
+            <a  href="activites.html"class="items-footer"><h5>Les activités proposées </h5></a> <br>
+            <a  href="bonnesadresses.html"class="items-footer"><h5>Quelques bonnes adresses </h5></a> <br>
+            <a target="_blank" href="https://www.tours-tourisme.fr"class="items-footer"><h5>Office de tourisme de Tours</h5></a>
+          </div>
+    
+    
+           <div class="carte">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42321.01662824447!2d0.6754457994569218!3d47.39942506950387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fcd5b34a979a55%3A0x40dc8d705388430!2sTours!5e0!3m2!1sfr!2sfr!4v1601457046302!5m2!1sfr!2sfr"
+                width="300" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+               </iframe>
+           </div>
+    
+           <div class="merci">
+                <h4>Merci d'avoir consulté notre site,<br> et bonne visite!</h4><br>
+           </div>
+    
+           <div class="reseaux">
+            <h5>Suivez-nous! </h5>
+           </div>
+           <div class="reseaux1">
+                <a target="_blank"
+                
+                    href="https://www.instagram.com/villedetours/?hl=fr">
+                    <img src="../images/instagram2.png" alt="instagram Tours" style="max-width:70px">
+                 </a>
+                 <br><br>
+                
+                 <a target="_blank"
+                    href="https://www.facebook.com/tours.fr/">
+                    <img src="../images/facebook2.png" alt="facebook Tours" style="max-width:70px">
+                 </a>
+                <br><br>
+                
+                <a target="_blank"
+                    href="https://twitter.com/villedetours?lang=fr">
+                    <img src="../images/twitter2.png" alt="twitter Tours" style="max-width:70px">
+                </a>
+                <br><br>
+            </div>  
+           <div class="contact">
+                    <p>
+                        02 47 70 37 37<br>
+                        dmc@tours-tourisme.fr<br><br>
+                        78-82 <br> Rue Bernard Palissy <br> 37000 Tours
+                    </p>
+           </div>
+    
+           <div class="copyright">
+                    <p>
+                        © 2020 Maxime.A Maxime.B Aurélie.F Léo.B , Wild Code School
+                    </p>
+           </div>
+           <div id="scrollUp">
+                    <a href="#header"><img src="../images/to_top.png"style="max-width:100px"></a>
+           </div>
+            
+         </div>
+      </footer>
+</body>
