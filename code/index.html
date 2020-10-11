@@ -9,11 +9,11 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">    <title>Vision Tours</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Document</title>
 </head>
 <body>
   <header id="header" class="header">
+<<<<<<< HEAD
     <a href="index.html"><img src="../images/logo2.png" class="logo" alt="logo" width="100" height="81" ></a>
     <a href="javascript:void(0);" class="icon" id="icon" onclick="topMenu()">
       <div class="container" id="button-menu" onclick="myFunction(this)">
@@ -23,12 +23,19 @@
       </div> 
     </a>
     <nav class="menu" id="menu">
+=======
+    <a href="index.html"><img src="../images/logo2.png" class="logo" alt="logo" width=105rem ></a>
+    <nav class="menu" id="mymenu">
+>>>>>>> 690c69bf552e3fa1ecd76fd9726bd8f56df4142b
         <a href="histoire.html" class="item">Histoire</a>
         <a href="visite.html"class="item">Visites</a>
         <a href="activité.html"class="item">Activités</a>
         <a href="adresse.html"class="item">Adresses</a>
         <a href="contact.html"class="item">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i></a>
     </nav>
+<<<<<<< HEAD
       <script>
 
 
@@ -57,6 +64,19 @@ function myFunction(x) {
 
 
       </script>
+=======
+    </nav>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("mymenu");
+        if (x.className === "menu") {
+          x.className += " responsive";
+        } else {
+          x.className = "menu";
+        }
+      } 
+    </script>
+>>>>>>> 690c69bf552e3fa1ecd76fd9726bd8f56df4142b
       </header>
       <div id="myCarousel" class="carousel slide carousel-slide" data-ride="carousel" data-interval= "100000">
         <ol class="carousel-indicators">
