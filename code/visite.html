@@ -6,7 +6,7 @@
     <meta author = "Aurélie Fauquet, Maxime Bouet, Leo Brossillion, Maxime Auneau">
     <meta name="Description" content="Une histoire, un lieu, une visite !">
     <meta name="keywords" content="Visite, Tours, Guide">
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="visite.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">    <title>Vision Tours</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -14,10 +14,15 @@
 </head>
 <body>
   <header id="header" class="header">
-    <a href="index.html"><img src="../images/logo2.png" class="logo" alt="logo" width="200" height="81" ></a>
-    <a href="../images/icon.png" class="icon" id="icon"><img src="../images/icon.png" width="50"></img>
+    <a href="index.html"><img src="../images/logo2.png" class="logo" alt="logo" width="100" height="81" ></a>
+    <a href="javascript:void(0);" class="icon" id="icon" onclick="topMenu()">
+      <div class="container" id="button-menu" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div> 
     </a>
-    <nav class="menu">
+    <nav class="menu" id="menu">
         <a href="histoire.html" class="item">Histoire</a>
         <a href="visite.html"class="item">Visites</a>
         <a href="activité.html"class="item">Activités</a>
@@ -25,11 +30,173 @@
         <a href="contact.html"class="item">Contact</a>
     </nav>
       <script>
-         (function($){
-          $('#icon').click(function(e){
-              e.preventDefault();
-              $('body').toggleClass('with-sidebar');
-          })
-        })(jQuery);
-      </script>
+
+
+function topMenu() {
+  var x = document.getElementById("menu");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+/* Open */
+function openNav() {
+  document.getElementById("menu").style.height = "100%";
+}
+
+/* Close */
+function closeNav() {
+  document.getElementById("menu").style.height = "0%";
+} 
+
+function myFunction(x) {
+  x.classList.toggle("change");
+} 
+
+</script>
       </header>
+
+  <div class="visites">
+   
+    
+      
+      <div class="container">
+        <div class ="ciel">
+        <img src="../images/tours_vue_du_ciel.jpg" width="100%" height="100%" alt="ciel"></div>
+        <div class="les-visites">Les Visites</div>
+        
+      </div>
+    <div class ="visite-img">
+      <div class="basilique">
+
+        <div class="title">La basilique Saint-Martin</div>
+        
+        <img src="../images/basilique_st_martin.png" width="400" height="500" alt="basilique">
+        <h4>La basilique Saint-Martin de Tours est un édifice religieux situé à Tours dans le Vieux-Tours, dont la crypte abrite le tombeau de Martin de Tours.<br>
+          L'ancienne église collégiale Saint-Martin de Tours, qui datait essentiellement du xie siècle, fut désaffectée, <br>
+          C'est un bâtiment en calcaire, granite et marbre, couvert d'ardoises. <br>
+          Une statue monumentale de saint Martin, en bronzenote 1, destinée à orner le dôme, fut commandée au sculpteur Jean-Baptiste Hugues (prix de Rome en 1875). Victor Thiébaut, fondeur, la livra en 1889. <br>
+          L'édifice a été consacré comme basilique le 4 juillet 1925.</h4>
+          <a href="https://www.basiliquesaintmartin.fr" class="ref">voir plus...</a>
+        
+      </div>   
+      <div class="cathedrale">
+        <div class="title">La cathédrale Saint-Gatien</div>
+        <img src="../images/cathedrale_st_gatien.png" width="400" height="500" alt="cathedrale">
+        <h4>La cathédrale Saint-Gatien de Tours est une cathédrale catholique romaine, située à Tours dans le Vieux-Tours, en Indre-et-Loire.<br>
+         Dédiée à saint Gatien, le premier évêque de Tours, elle est le siège de l'archidiocèse de Tours<br>
+         et la cathédrale métropolitaine de la province ecclésiastique de Tours.<br>
+         La cathédrale Saint-Gatien a été construite entre 1170 et 1547. <br>
+         Elle fait l’objet d’un classement au titre des monuments historiques par la liste de 18621.
+        </h4>
+        <a href="https://www.paroisse-cathedrale-tours.fr/cathedral/index" class="ref">voir plus...</a> 
+      </div>
+      <div class="musee">
+        <div class="title">Le musée des Beaux-arts</div>
+        <img src="../images/musee_des_beaux_arts.png" width="400" height="500" alt="musee">
+        <h4>
+          Le musée des Beaux-Arts de Tours est installé dans l'ancien palais épiscopal de la ville, proche de la cathédrale dans le Vieux-Tours.<br>
+
+         Un jardin à la française s'étend devant le palais épiscopal du xviiie siècle, qui a gardé une partie de son décor d'origine. <br>
+         Un cèdre du Liban, classé Arbre Remarquable de France, orne la cour du musée et on peut voir dans cette même cour, dans un bâtiment en face du palais, Fritz, <br>
+         un éléphant d'Asie empaillé, abattu car devenu incontrôlable lors d'une parade du cirque Barnum & Bailey dans les rues de Tours le 10 juin 1902. <br>
+         L'accès à l'éléphant et au grand cèdre sont gratuits puisqu'à l'intérieur du parc.
+        </h4>
+        <a href="http://www.mba.tours.fr" class="ref">voir plus...</a>
+        
+      </div>
+      <div class="chateau">
+        <div class="title">Le château de Tours</div>
+        <img src="../images/chateau_de_tours.png" width="400" height="500" alt="chateau">
+        <h4>
+          Le château de Tours, en Indre-et-Loire, est situé en bordure de Loire dans le quartier le plus ancien de Tours, proche de la cathédrale Saint Gatien, érigé sur les vestiges de la cité antique dont Tours tire son origine.<br>
+          Nonobstant l'étendue de ses fondations partiellement révélées par les fouilles des années 1970, il est la trace fort modeste d'un château médiéval comtal du xie siècle, <br>
+          tel qu'il fut modifié et agrandi aux xiiie et xve siècles où il acquiert le statut de demeure royale. <br>
+          Presque entièrement détruit au xviiie siècle, ses deux tours restantes sont accommodées avec un nouveau bâtiment utilisé par l'armée à partir de la Révolution.
+        </h4>
+        <a href="https://www.tours.fr/services-infos-pratiques/139-chateau.htm" class="ref">voir plus...</a>
+      </div>
+    </div>
+  
+
+  </div>
+
+
+
+        <footer>
+          <div class="footer">
+            <nav class="menu-footer">
+              <a href="histoire.html" class="items-footer">Histoire</a>
+              <a href="visite.html"class="items-footer">Visites</a>
+              <a href="activité.html"class="items-footer">Activités</a>
+              <a href="adresse.html"class="items-footer">Adresses</a>
+              <a href="contact.html"class="items-footer">Contact</a>
+          </nav>
+      
+            <div class="liens-utiles">
+              <div class="text-footer"><h2>Les liens utiles:</h2></div> <br>
+              <a  href="histoire.html" class="items-footer"><h5>En savoir plus sur notre ville</h5></a> <br> 
+              <a  href="visites.html" class="items-footer"><h5>Les visites à faire à Tours</h5></a> <br>
+              <a  href="activites.html"class="items-footer"><h5>Les activités proposées </h5></a> <br>
+              <a  href="bonnesadresses.html"class="items-footer"><h5>Quelques bonnes adresses </h5></a> <br>
+              <a target="_blank" href="https://www.tours-tourisme.fr"class="items-footer"><h5>Office de tourisme de Tours</h5></a>
+            </div>
+      
+      
+             <div class="carte">
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42321.01662824447!2d0.6754457994569218!3d47.39942506950387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fcd5b34a979a55%3A0x40dc8d705388430!2sTours!5e0!3m2!1sfr!2sfr!4v1601457046302!5m2!1sfr!2sfr"
+                  width="300" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                 </iframe>
+             </div>
+      
+             <div class="merci">
+                  <h4>Merci d'avoir consulté notre site,<br> et bonne visite!</h4><br>
+             </div>
+      
+             <div class="reseaux">
+              <h5>Suivez-nous! </h5>
+             </div>
+             <div class="reseaux1">
+                  <a target="_blank"
+                  
+                      href="https://www.instagram.com/villedetours/?hl=fr">
+                      <img src="../images/instagram2.png" alt="instagram Tours" style="max-width:70px">
+                   </a>
+                   <br><br>
+                  
+                   <a target="_blank"
+                      href="https://www.facebook.com/tours.fr/">
+                      <img src="../images/facebook2.png" alt="facebook Tours" style="max-width:70px">
+                   </a>
+                  <br><br>
+                  
+                  <a target="_blank"
+                      href="https://twitter.com/villedetours?lang=fr">
+                      <img src="../images/twitter2.png" alt="twitter Tours" style="max-width:70px">
+                  </a>
+                  <br><br>
+              </div>  
+             <div class="contact">
+                      <p>
+                          02 47 70 37 37<br>
+                          dmc@tours-tourisme.fr<br><br>
+                          78-82 <br> Rue Bernard Palissy <br> 37000 Tours
+                      </p>
+             </div>
+      
+             <div class="copyright">
+                      <p>
+                          © 2020 Maxime.A Maxime.B Aurélie.F Léo.B , Wild Code School
+                      </p>
+             </div>
+             <div id="scrollUp">
+                      <a href="#header"><img src="../images/to_top.png"style="max-width:100px"></a>
+             </div>
+              
+           </div>
+        </footer>
+</body>
+</html>
+   
