@@ -12,24 +12,54 @@ body {
   }
 
 .menu a {
+    color: white;
+    font-size: 27px;
+    padding: 1.35rem 5rem;
+    float: left;
+    display: flex;
+    margin-left: 2vw;
+
+  }
+
+  .container {
+    display: inline-block;
+    cursor: pointer;
+    z-index: 123123123312;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(68, 100, 131);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+
+  .logo {
     float: left;
     display: block;
-    color: white;
-    text-align: center;
-    padding: 20px 20px;
-    font-size: 27px;
-    margin-left: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
   }
 
-.logo {
-    float: left; 
-    display: block;
-  }
 
 .menu .item:hover {
-    background-color:rgb(0, 160, 222);
+    background-color:rgb(68, 100, 131);
     color: white;
     text-decoration: none;
   }
@@ -41,9 +71,6 @@ body {
   @media screen and (max-width:760px){
     .header .icon{
         display:block;
-        position: relative;
-        width:50px;
-        height:50px;
         float: right;
         z-index: 500;
         margin-right: 30px;
@@ -51,30 +78,20 @@ body {
     }
     
     .menu{
-      z-index: 500;
-        position: absolute;
-        width:250px;
-        right:0;
-        top:80px;
-
-        transform: translateX(+250px);
-        transition-duration: 0.3s;
+      display: none;
     }
     .menu a{
       z-index: 500;
         display: block;
-        height:70px;
-        width:200px;
+        width:100%;
         text-align: center;
         line-height: 40px;
         background-color: rgb(78, 78, 78);
         border-bottom:1px solid darkgray;
+        padding: 1rem;
+        margin-left: 0;
     }
 }
-
-.with-sidebar .menu{
-        transform: translateX(0);
-    }
 
 
 
@@ -309,7 +326,7 @@ body {
     }
     .box {
       margin-bottom: 30px;
-      margin-left: 35px;
+      margin-right: auto; margin-left: auto;
     }
 
     .flex-container {
@@ -338,17 +355,28 @@ body {
 .footer {
   background-color: #333;
   width: 100%;
-  padding-top: 20px;
-  margin-bottom: -100px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: -200px;
 }
 
 .text-footer {
-border-bottom: solid 2px white;
+border-bottom: solid 3px white;
 text-align: center;
 margin-bottom: 4rem;
-margin-right: 10rem; margin-left: 10rem;
+margin-right: 10rem; 
+margin-left: 10rem;
+text-decoration-style: none;
 }
 
+.menu-footer{
+  visibility: hidden;
+  margin-top: 2rem;
+  padding-bottom:2.5rem;
+  border-bottom: solid 1px white;
+  }
+
+ 
 .liens-utiles{
 margin-left: 25px;
 color: white;
@@ -365,9 +393,11 @@ text-decoration: none;
 color: white;
 }
 
+
 .items-footer:hover {
 color: white;
 text-decoration: none;
+color: rgb(0, 160, 222);
 }
 
 .reseaux{
@@ -379,7 +409,9 @@ text-decoration: none;
   display:flex;
   justify-content: center;
   text-align: center;
+  
 }
+
 .contact{
   text-align: center;
   color: white;
@@ -405,6 +437,47 @@ opacity: 0,7;
 }
 
 
+@media (max-width: 40em) {
+ .carte{
+   visibility: hidden;
+ }
+ .liens-utiles{
+   
+   visibility: hidden;
+ }
+.menu-footer{
+  visibility: visible;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
+  
+}
+.merci {
+  margin-top: -45vh;
+}
+}
+
+@media (max-width: 62em) {
+  .carte{
+   visibility: hidden;
+  }
+  .liens-utiles{
+    
+    visibility: hidden;
+  }
+  .menu-footer{
+    visibility: visible;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+  }
+}
+
+
 
 
 /* ----------------------------------------------------CONTACT------------------------------------------------*/
@@ -412,26 +485,28 @@ opacity: 0,7;
 .bg-c {
   background-image: url(../images/toursC1.png);
   background-size: cover;
-  padding: 1px 1px 40px 1px;
+  padding: 1px 1px 200px 1px;
   margin-bottom: -50px;
 }
 
 .boiteForm {
 
 background-color: rgba(51, 51, 51, 0.897);
-margin-left: 400px; margin-right: 400px;
+width: 50%;
+margin-left: auto;
+margin-right: auto;
 padding: 5px 50px 20px 50px;
-margin-top: 50px;
+margin-top: 150px;
 border-radius: 10px;
 color: white;
 }
 
 #contact {
-  margin: 2rem;
-  font-size: 45px;
+  margin: 2vh;
+  font-size: 3vw;
   border-bottom: 2px solid rgb(255, 255, 255);
   padding: 10px;
-  margin-left: 120px; margin-right: 120px;
+  margin-left: 3vh; margin-right: 3vh;
   text-align: center;
 }
 
@@ -468,7 +543,10 @@ input[type=checkbox]{
 
 #infos1, #infos2, #infos3 {
   height: 20px;
-  width: 20px;
+}
+
+.infos {
+  font-size: 22px;
 }
 
 .button {
@@ -538,3 +616,57 @@ input[type=submit] {
   text-align: center;
   border-radius: 3px;
 }
+
+@media (max-width: 40em) {
+
+    .bg-c{
+      width: 100%;
+    }
+    .boiteForm {
+      width: 100%;
+      
+    }
+
+    label {
+      font-size: 2vh;
+    }
+
+    .infos {
+      font-size: 2.4vh;
+    }
+
+    #contact {
+      font-size: 3.5vh;
+    }
+
+    .button {
+      margin-left: 3rem;
+    }
+  }
+
+@media (max-width: 62em) {
+  .bg-c{
+    width: 100%;
+  }
+  .boiteForm {
+    width: 100%;
+    
+  }
+
+  label {
+    font-size: 2.5vh;
+  }
+
+  #contact {
+    font-size: 3.5vh;
+  }
+
+  .button {
+    margin-left: 3rem;
+  }
+
+  .infos {
+    font-size: 2.2vh;
+  }
+}
+
