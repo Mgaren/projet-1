@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author = "Aurélie Fauquet, Maxime Bouet, Leo Brossillion, Maxime Auneau">
+    <meta name="Description" content="Une histoire, un lieu, une visite !">
+    <meta name="keywords" content="Visite, Tours, Guide">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">    <title>Vision Tours</title>
+    <title>Document</title>
+</head>
+<body>
+  <header id="header" class="header">
+<<<<<<< HEAD
+    <a href="index.html"><img src="../images/logo2.png" class="logo" alt="logo" width="100" height="81" ></a>
+    <a href="javascript:void(0);" class="icon" id="icon" onclick="topMenu()">
+      <div class="container" id="button-menu" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div> 
+    </a>
+    <nav class="menu" id="menu">
+=======
+    <a href="index.html"><img src="../images/logo2.png" class="logo" alt="logo" width=105rem ></a>
+    <nav class="menu" id="mymenu">
+>>>>>>> 690c69bf552e3fa1ecd76fd9726bd8f56df4142b
+        <a href="histoire.html" class="item">Histoire</a>
+        <a href="visite.html"class="item">Visites</a>
+        <a href="activité.html"class="item">Activités</a>
+        <a href="adresse.html"class="item">Adresses</a>
+        <a href="contact.html"class="item">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i></a>
+    </nav>
+<<<<<<< HEAD
+      <script>
+
+
+function topMenu() {
+  var x = document.getElementById("menu");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+/* Open */
+function openNav() {
+  document.getElementById("menu").style.height = "100%";
+}
+
+/* Close */
+function closeNav() {
+  document.getElementById("menu").style.height = "0%";
+} 
+
+function myFunction(x) {
+  x.classList.toggle("change");
+} 
+
+
+      </script>
+=======
+    </nav>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("mymenu");
+        if (x.className === "menu") {
+          x.className += " responsive";
+        } else {
+          x.className = "menu";
+        }
+      } 
+    </script>
+>>>>>>> 690c69bf552e3fa1ecd76fd9726bd8f56df4142b
+      </header>
+      <div id="myCarousel" class="carousel slide carousel-slide" data-ride="carousel" data-interval= "100000">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active"> 
+            <img id="first" class="first-slide animated zoomInUp" src="../images/Tours_8.jpg">
+            <div class="textC">
+              <div class="carousel-caption">
+                <h3 class="animated fadeInDown">Des visites inoubliables..</h3>
+                <p class="animated zoomInLeft">Musées, Châteaux, spectacles, festivals.. <br> Tours la ville riche en culture !</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="second-slide animated zoomInDown" src="../images/Tours_7.jpeg" alt="">
+            <div class="textC">
+              <div class="carousel-caption">
+                <h3 class="animated fadeInDown">Un environnement sans précedent..</h3>
+                <p class="animated fadeInRight">Situé entre la Loire et le Cher ! <br> La ville de Tours regorge d'activités aussi bien nautique que terrestre tout en gardant son côté écologique !</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="third-slide animated zoomIn" src="../images/Tours_2.JPG" alt="">
+            <div class="textC">
+              <div class="carousel-caption">
+                <h3 class="animated fadeInDown">Une architecture et une histoire très diverse..</h3>
+                <p class="animated slideInLeft">Une alliance architecturale gothique et sommets.. <br> Une ville avec une histoire bien ancré en France !</p>          
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+        <div class="flextext">
+          <div class="titreflex"><h2> Bienvenue dans notre vision de Tours </h2>
+          <h3> Nous vous avons fait une sélection des incontournables : </h3>
+          </div>
+          <div class="flex-container">
+              <div class="box">
+                  <div class="Histoire">
+                      <div class="front">
+                        <h4 class="textHistoire"> Histoire </h4>
+                        <img src="../images/histoire_tours.jpeg" width="300" height="300">
+                      </div>
+                      <div class="back1">
+                        <div class="textBack">
+                          <p> HISTOIRE <br><br> Vous étes un mordu d'histoire, ou voulez tout simplement connaitre l'histoire de votre ville. </p>
+                          <span><a href="histoire.html" class="link"> Voir plus... </a></span>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="box">
+                  <div class="Visite">
+                      <div class="front">
+                        <h4 class="textVisite"> Visite </h4>
+                        <img src="../images/visite_tours.jpeg" width="300" height="300">
+                      </div>
+                      <div class="back2">
+                        <div class="textBack">
+                          <p> VISITE <br><br> Admiratif de beaux tableaux, d'oeuvres d'art. Ou tout simplement amateur d'architecture. </p>
+                          <span><a href="visite.html" class="link"> Voir plus... </a></span>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="box">
+                  <div class="Activité">
+                      <div class="front">
+                        <h4 class="textActivité"> Activité </h4>
+                        <img src="../images/activité_tours.jpeg" width="300" height="300">
+                      </div>
+                      <div class="back3">
+                        <div class="textBack">
+                          <p> ACTIVITES <br><br> Les meilleures activités de Tours, selon nous, vous seront présentés ici. </p>
+                          <span><a href="activité.html" class="link"> Voir plus... </a></span>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="box">
+                  <div class="Adresses">
+                      <div class="front">
+                        <h4 class="textAdresses"> Adresses </h4>
+                        <img src="../images/adresse_tours.jpg" width="300" height="300">
+                      </div>
+                      <div class="back4">
+                        <div class="textBack">
+                          <p> ADRESSES <br><br> Nos Bonnes Adresses sur Tours : manger, boire entre amis et/ou en famille. </p>
+                          <span><a href="adresse.html" class="link"> Voir plus... </a></span>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <footer>
+          <div class="footer">
+            <nav class="menu-footer">
+              <a href="histoire.html" class="items-footer">Histoire</a>
+              <a href="visite.html"class="items-footer">Visites</a>
+              <a href="activité.html"class="items-footer">Activités</a>
+              <a href="adresse.html"class="items-footer">Adresses</a>
+              <a href="contact.html"class="items-footer">Contact</a>
+          </nav>
+      
+            <div class="liens-utiles">
+              <div class="text-footer"><h2>Les liens utiles:</h2></div> <br>
+              <a  href="histoire.html" class="items-footer"><h5>En savoir plus sur notre ville</h5></a> <br> 
+              <a  href="visites.html" class="items-footer"><h5>Les visites à faire à Tours</h5></a> <br>
+              <a  href="activites.html"class="items-footer"><h5>Les activités proposées </h5></a> <br>
+              <a  href="bonnesadresses.html"class="items-footer"><h5>Quelques bonnes adresses </h5></a> <br>
+              <a target="_blank" href="https://www.tours-tourisme.fr"class="items-footer"><h5>Office de tourisme de Tours</h5></a>
+            </div>
+      
+      
+             <div class="carte">
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42321.01662824447!2d0.6754457994569218!3d47.39942506950387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fcd5b34a979a55%3A0x40dc8d705388430!2sTours!5e0!3m2!1sfr!2sfr!4v1601457046302!5m2!1sfr!2sfr"
+                  width="300" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                 </iframe>
+             </div>
+      
+             <div class="merci">
+                  <h4>Merci d'avoir consulté notre site,<br> et bonne visite!</h4><br>
+             </div>
+      
+             <div class="reseaux">
+              <h5>Suivez-nous! </h5>
+             </div>
+             <div class="reseaux1">
+                  <a target="_blank"
+                  
+                      href="https://www.instagram.com/villedetours/?hl=fr">
+                      <img src="../images/instagram2.png" alt="instagram Tours" style="max-width:70px">
+                   </a>
+                   <br><br>
+                  
+                   <a target="_blank"
+                      href="https://www.facebook.com/tours.fr/">
+                      <img src="../images/facebook2.png" alt="facebook Tours" style="max-width:70px">
+                   </a>
+                  <br><br>
+                  
+                  <a target="_blank"
+                      href="https://twitter.com/villedetours?lang=fr">
+                      <img src="../images/twitter2.png" alt="twitter Tours" style="max-width:70px">
+                  </a>
+                  <br><br>
+              </div>  
+             <div class="contact">
+                      <p>
+                          02 47 70 37 37<br>
+                          dmc@tours-tourisme.fr<br><br>
+                          78-82 <br> Rue Bernard Palissy <br> 37000 Tours
+                      </p>
+             </div>
+      
+             <div class="copyright">
+                      <p>
+                          © 2020 Maxime.A Maxime.B Aurélie.F Léo.B , Wild Code School
+                      </p>
+             </div>
+             <div id="scrollUp">
+                      <a href="#header"><img src="../images/to_top.png"style="max-width:100px"></a>
+             </div>
+              
+           </div>
+        </footer>
+</body>
+</html>
