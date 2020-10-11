@@ -102,6 +102,21 @@ body {
       padding-bottom: 3rem;
       
   }
+
+  .title-ciel{
+    background: url(../images/tours_vue_du_ciel.jpg);
+    background-position: center;
+    background-size: cover;
+    font-size: 10vh;
+    padding: 20vw;
+    text-align: center;
+    width: 100%;
+  }
+
+  #title-inside {
+    background-color: #333;
+    padding: 10px;
+  }
   
   .basilique{
       padding-bottom: 1.5rem;
@@ -110,13 +125,12 @@ body {
   }
   .title {
     margin-bottom: 1rem;
-    margin-left: 2rem; margin-right: 2rem;
+
     text-align: center;
     font-size: 30px;
     color: white;
     border-bottom: solid 1px white;  
-    margin-left: 3.5rem; 
-    margin-right: 3.5rem;
+
   }
 
   
@@ -135,29 +149,18 @@ body {
   }
 
 
-
-.container{
- position: relative;
- text-align: center;
- color: white;
- 
- font-size: 50px;
- width: 100%;
- 
-}
-.les-visites{
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-
   @media (min-width: 40em) {
       .visite-img{
           text-align:center;
-          margin-left: 5rem;
-          margin-right: 5rem;
+
+
+      }
+
+      #title-inside {
+        padding: 20px;
+      }
+
+      .title-ciel{
 
       }
       
