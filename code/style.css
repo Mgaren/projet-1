@@ -356,8 +356,7 @@ body {
   background-color: #333;
   width: 100%;
   padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-bottom: -200px;
+
 }
 
 .text-footer {
@@ -457,7 +456,6 @@ opacity: 0,7;
 .merci {
   margin-top: -45vh;
 }
-}
 
 @media (max-width: 62em) {
   .carte{
@@ -476,8 +474,6 @@ opacity: 0,7;
     justify-content: space-around;
   }
 }
-
-
 
 
 /* ----------------------------------------------------CONTACT------------------------------------------------*/
