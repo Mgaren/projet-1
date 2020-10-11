@@ -1,86 +1,8 @@
-<<<<<<< HEAD
-/*-----------------partie menue----------------------------*/
-
-=======
->>>>>>> ead6d058a571940d571a21d37a5ff6b03acca03f
 body {
     padding-top: 0;
     padding-bottom: 3rem;
     background-color: #CFD8DC;
     text-decoration: none;
-<<<<<<< HEAD
-}
-  
-.header{
-    background-color: #333;
-     overflow: hidden;
-     
-}
-  
-.menu a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 20px 20px;
-    font-size: 27px;
-    margin-left: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-  
-.logo {
-    float: left; 
-    display: block;
-}
-  
-.menu .item:hover {
-    background-color:rgb(0, 160, 222);
-    color: white;
-    text-decoration: none;
-}
-  
-.header .icon {
-    display: none;
-} 
-  
-@media screen and (max-width:760px){
-    .header .icon{
-        display:block;
-        position: relative;
-        width:50px;
-        height:50px;
-        float: right;
-        z-index: 500;
-        margin-right: 30px;
-        margin-top: 15px;
-    }
-      
-    .menu{
-        z-index: 500;
-        position: absolute;
-        width:250px;
-        right:0;
-        top:80px;
-        transform: translateX(+250px);
-        transition-duration: 0.3s;
-    }
-    .menu a{
-        z-index: 500;
-        display: block;
-        height:70px;
-        width:200px;
-        text-align: center;
-        line-height: 40px;
-        background-color: rgb(78, 78, 78);
-        border-bottom:1px solid darkgray;
-    }
-}
-  
-.with-sidebar .menu{
-    transform: translateX(0);
-}
-=======
   }
   
   .header{
@@ -171,7 +93,6 @@ body {
       }
   }
   
->>>>>>> ead6d058a571940d571a21d37a5ff6b03acca03f
 
 
 /*-------------------------- partie disigne adresses--------------------------*/
@@ -198,7 +119,7 @@ body {
 
 #tableau {
     background-color: #446483;
-    margin-bottom: -3rem;
+    
 }
 
 .tableau {
@@ -255,6 +176,10 @@ body {
         margin-left: 3.5rem;
     }
 
+    #tableau {
+      margin-bottom : -1rem;
+    }
+
     .textTitre2 {
         margin-top: 3rem;
         margin-left: 3.5rem;
@@ -303,9 +228,6 @@ body {
         border-top: none;
         border-bottom: solid 5px white;
     }
-<<<<<<< HEAD
-}
-=======
 }
 
 
@@ -434,4 +356,3 @@ body {
       justify-content: space-around;
     }
   }
->>>>>>> ead6d058a571940d571a21d37a5ff6b03acca03f
